@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-fade-in: fadeInUP 1s ease-out forwards;
+}
+
+@keyframes fadeInUP {
+  from { opacity: 0;
+         transform: translateY(2rem); }
+  to { opacity: 1;
+       transform: translateY(0); }
+}
